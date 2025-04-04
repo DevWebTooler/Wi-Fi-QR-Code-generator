@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2>WiFi Login</h2>
+            <div class="internal">
+                <div class="inputs">
+                    <label>
+                        Network Name
+                        <input class="ssid" placeholder="WiFi name">
+                    </label>
+                    <label>
+                        Password
+                        <input class="password" placeholder="WiFi password">
+                    </label>
+                </div>
+            </div>
+
+            <p>
+                📸 Use your phone to scan the QR code and connect your device
+            </p>
+
+            <button type="button">Print</button>
+        </form>
+        
+        <div class="qr-container">
+            <div id="qrcode"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
